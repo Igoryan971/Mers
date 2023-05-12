@@ -10,5 +10,11 @@ newArray.forEach((element) => {
       behavior: "smooth",
       block: "start",
     });
+    if (
+      burger.classList.contains("humburger-menu-active") &&
+      menuElem.classList.contains("menu-active")
+    ) {
+      toggleMenu();
+    }
   });
 });
